@@ -8,11 +8,9 @@
 </head>
 <body>
     <header class="page-header">
-        {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="top-menu">
-                <span style="color: white; font-size: 20pt; float: right;">+ 새 글 쓰기</span>
-            </a>
-        {% endif %}
+        <a href="{% url 'post_new' %}" class="top-menu">
+            <span style="color: white; font-size: 20pt; float: right;">+ 새 글 쓰기</span>
+        </a>
         <h1><a href="/">Django 웹 프레임워크 실습</a></h1>
     </header>
 
